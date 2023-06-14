@@ -1,0 +1,44 @@
+name: golden_plan
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0-290.3.beta <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  #добавляю слои
+  business_layout:
+    path: lib/business_layout
+  models:
+    path: lib/models
+  cupertino_icons: ^1.0.2
+  rive: ^0.11.1
+  go_router: ^7.1.1
+  english_words: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  assets:
+    - assets/riv_animations/
+    - assets/fonts/Oswald/
+
+
+  uses-material-design: true
+  fonts:
+    - family: Oswald
+      fonts:
+        - asset: assets/fonts/Oswald/Oswald-VariableFont_wght.ttf
+        - asset: assets/fonts/Oswald/Oswald-Medium.ttf
+        - asset: assets/fonts/Oswald/Oswald-Bold.ttf
+          style: italic
+          weight: 400
